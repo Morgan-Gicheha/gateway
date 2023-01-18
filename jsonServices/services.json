@@ -1,0 +1,16 @@
+{
+    "services": {
+        "SERVICE-ONE": {
+            "port": "3009",
+            "host": "localhost",
+            "protocol": "http",
+            "route": ""
+        },
+        "SERVICE-TWO": {
+            "port": "3050",
+            "host": "localhost",
+            "protocol": "http",
+            "route": ""
+        }
+    }
+}
