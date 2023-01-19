@@ -1,16 +1,18 @@
 {
     "services": {
-        "SERVICE-ONE": {
+        "SENEGAL-ORANGE-MONEY": {
             "port": "3009",
             "host": "localhost",
             "protocol": "http",
-            "route": ""
+            "route": "",
+            "healthRoute":"/health"
         },
-        "SERVICE-TWO": {
+        "GHANA-MTN": {
             "port": "3050",
             "host": "localhost",
             "protocol": "http",
-            "route": ""
+            "route": "",
+            "healthRoute":"/health"
         }
     }
 }
