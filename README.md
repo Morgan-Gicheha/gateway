@@ -14,8 +14,14 @@ NB:  this has been implemented in the gateway yet
 
 
 4 .  gateway to handle token based auth - not done
+
+
 5 . gateway to handle logging - not done
+
+
 6 . gateway to report fraudulent activities - not done
+
+
 7 . gateway to implement honey-pots for security - not done
 
 
