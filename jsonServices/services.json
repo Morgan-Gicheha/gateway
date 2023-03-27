@@ -7,7 +7,7 @@
             "route": "",
             "healthRoute":"/health"
         },
-        "GHANA-SERVICE2": {
+        "SERVICE2": {
             "port": "3050",
             "host": "localhost",
             "protocol": "http",

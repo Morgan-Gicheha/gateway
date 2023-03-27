@@ -7,9 +7,13 @@ const callSelectedService = async (httpMethod, url, data = {}) => {
     const options = {
         method: httpMethod,
         url: url,
-        data: { service: "SENEGAL-ORANGE-MONEY" },
         headers: { "Content-Type": "application/json" },
+        data: data
+
     };
+
+    console.log(":options", options)
+
 
     let response = await axios
         .request(options)
@@ -20,7 +24,7 @@ const callSelectedService = async (httpMethod, url, data = {}) => {
         .catch((err) => {
             return {
                 status: "091",
-                successful: false,
+                error: true,
                 reason: `something happened when calling child service on url: ${url} : ERROR \n ${JSON.stringify(err.response)}`,
             };
         });
