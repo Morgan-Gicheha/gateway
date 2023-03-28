@@ -1,18 +1,1 @@
-{
-    "services": {
-        "SERVICE1": {
-            "port": "3009",
-            "host": "localhost",
-            "protocol": "http",
-            "route": "",
-            "healthRoute":"/health"
-        },
-        "SERVICE2": {
-            "port": "3050",
-            "host": "localhost",
-            "protocol": "http",
-            "route": "",
-            "healthRoute":"/health"
-        }
-    }
-}
+{"services":{"SEwRVICeE":{"name":"SEwRVICeE","port":"31109","host":"localhost","protocol":"http","route":"","healthRoute":"/health"},"SEwRVeICeE":{"name":"SEwRVeICeE","port":"31100","host":"localhost","protocol":"http","route":"","healthRoute":"/health"}}}
