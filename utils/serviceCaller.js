@@ -12,7 +12,7 @@ const callSelectedService = async (httpMethod, url, data = {}) => {
 
     };
 
-    console.log(":options", options)
+    // console.log(":options", options)
 
 
     let response = await axios

@@ -4,9 +4,9 @@ const selectService = (service) => {
     let selectedService = null;
 
     try {
-        console.log(service)
+        // console.log(service)
         selectedService = services["services"][service];
-        console.log(":services", services["services"][service])
+        // console.log(":services", services["services"][service])
 
         if (selectedService === undefined) {
             console.log({ status: "091", error: true, reason: "missing configurations in regestry json file" });
@@ -24,7 +24,7 @@ const generateURL = (selectedServiceObject) => {
     // http://127.0.0.1:3000
 
     let url;
-    console.log(":SERVICEOBJ",selectedServiceObject)
+    // console.log(":SERVICEOBJ",selectedServiceObject)
 
 
 
