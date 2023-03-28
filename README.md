@@ -24,11 +24,11 @@ NB:  this has been implemented in the gateway yet
 
 7 . gateway to implement honey-pots for security - not done
 
+8 . cache on the gateway level to prevent users from withdrawing the same amount within a certain period of time (maybe 5 min) - not done
 
 ```bash
 
 ```
 
 Take it, if you like it. just make sure you add authentication.
-if you want to use it for payments, you can add a cache on the gateway level to prevent users from withdrawing the same amount within a certain period of time (maybe 5 min)
 
