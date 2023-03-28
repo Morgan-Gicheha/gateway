@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 
 // done: prevent same TRX within 3 minute prediod
 
-// todo:  endpint register in the jsonServices/services.json file
+// done:  endpint register in the jsonServices/services.json file
 
 // todo:   gateway to handle token based auth
 
