@@ -41,7 +41,6 @@ router.post("/register", async (req, res) => {
     let jsonServices = services;
     jsonServices.services[data["name"]] = data;
 
-
     // console.log(filePath);
 
     fs.writeFile(filePath, JSON.stringify(jsonServices), (err) => {
@@ -57,7 +56,7 @@ router.put("/register", async (req, res) => {
     if (data.hasOwnProperty("name") === false || data["name"].length == 0 || data["data"].hasOwnProperty("port") === false || data["data"]["port"].length == 0) {
         return res.send({ status: "091", reason: "feild 'name' and 'port' must be present" });
     }
- 
+
     if (!services["services"][data["name"]]) {
         return res.status(400).send({ status: "091", reason: "Service does not exist" });
     }
@@ -69,11 +68,30 @@ router.put("/register", async (req, res) => {
         if (err) res.status(500).send({ status: "091", reason: JSON.stringify(err) });
     });
 
-    res.status(200).send({status:"000", reason:"updated"});
+    res.status(200).send({ status: "000", reason: "updated" });
 });
 
 router.delete("/register", async (req, res) => {
-    res.send(":DELETE REGISTERY SERVICE");
+    let data = req.body;
+
+    if (data.hasOwnProperty("name") === false || data["name"].length == 0) {
+        return res.send({ status: "091", reason: "feild 'name'  must be present" });
+    }
+
+    if (!services["services"][data["name"]]) {
+        return res.status(400).send({ status: "091", reason: "Service does not exist" });
+    }
+
+    let jsonServices = services;
+    delete jsonServices.services[data["name"]];
+
+    fs.writeFile(filePath, JSON.stringify(jsonServices), (err) => {
+        if (err) res.status(500).send({ status: "091", reason: JSON.stringify(err) });
+    });
+
+    res.status(200).send({ status: "000", reason: "deleted" });
+
+
 });
 
 router.all("*", function (req, res) {

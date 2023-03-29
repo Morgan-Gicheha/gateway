@@ -1,1 +1,1 @@
-{"services":{"SEwRVICeE":{"name":"SEwRVICeE","port":"31109","host":"localhost","protocol":"http","route":"","healthRoute":"/health"},"SEwRVeICeE":{"port":"31100","host":"localhost","protocol":"test","route":"","healthRoute":"/health"}}}
+{"services":{"SEwRVeICeE":{"name":"SEwRVeICeE","port":"31100","host":"localhost","protocol":"http","route":"","healthRoute":"/health"}}}
