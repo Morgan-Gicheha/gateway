@@ -2,7 +2,7 @@
 
 const notifyTelegram = async (message) => {
 
-    console.log("[*] CALLING TELEGRAM", message)
+    // console.log("[*] CALLING TELEGRAM", message)
 
 }
 

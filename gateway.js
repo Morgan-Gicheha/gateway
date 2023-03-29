@@ -22,8 +22,8 @@ const port = process.env.PORT || 3000;
 const logOptions = {
     basePath: "logs",
     fileName: "gateway.log",
-    ip: false,
-    showOnConsole: false,
+    ip: true,
+    showOnConsole: true,
 };
 
 app.use(express.json());

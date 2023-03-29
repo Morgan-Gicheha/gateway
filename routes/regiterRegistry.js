@@ -42,7 +42,7 @@ router.post("/register", async (req, res) => {
 
     const filePath = path.join(__dirname, "../jsonServices/", "services.json");
 
-    console.log(filePath);
+    // console.log(filePath);
 
     fs.writeFile(filePath, JSON.stringify(jsonServices), (err) => {
         if (err) throw err;
